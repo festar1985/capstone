@@ -1,27 +1,40 @@
+import "./Nav.css";
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
-    <>
-      <ul>
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About</a>
-        </li>
-        <li>
-          <a>Menu</a>
-        </li>
-        <li>
-          <a>Reservartion</a>
-        </li>
-        <li>
-          <a>Order Online</a>
-        </li>
-        <li>
-          <a>Login</a>
-        </li>
-      </ul>
-    </>
+    <ul className="nav-container-main">
+      <li className="nav-item">
+        <Link className="link" to="/">
+          HOME
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="link" to="/about">
+          ABOUT
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="link" to="/menu">
+          MENU
+        </Link>
+      </li>
+      <li className="nav-item nav-item-reservation">
+        <Link className="link" to="/reservations">
+          RESERVATIONS
+        </Link>
+      </li>
+      <li className="nav-item nav-item-order">
+        <Link className="link" to="/oder">
+          ORDER ONLINE
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="link" to="/login">
+          LOGIN
+        </Link>
+      </li>
+    </ul>
   );
 }
 

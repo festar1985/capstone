@@ -1,0 +1,36 @@
+.nav-container-main {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-content: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav-item {
+  list-style: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 10px;
+  font-weight: bold;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav-item-reservation {
+  grid-column: 4/6;
+}
+.nav-item-order {
+  grid-column: 6/8;
+}
+
+.link {
+  text-decoration: none;
+  color: "black";
+}
+
+.link:visited {
+  color: "black";
+}

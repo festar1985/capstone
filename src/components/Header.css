@@ -1,0 +1,14 @@
+.header-container-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  padding-left: 3%;
+  padding-right: 10%;
+  padding-top: 2%;
+}
+
+.header-item {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
