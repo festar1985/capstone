@@ -6,3 +6,18 @@
     padding-right: 10%;
     padding-top: 2%;
 }
+
+.footer-secondary-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-content: center;
+}
+
+.text-style{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.header-style{
+    font-size: 15px
+}

@@ -8,21 +8,22 @@ function Footer() {
       <div className="footer-container">
         <img src={logo2} alt="Little Lemon Logo" />
         <div>
-          <p>Doormat</p>
-          <p>Navigation</p>
+          <h3 className="header-style">
+            Doormat <br /> Navigation
+          </h3>
           <Nav2 />
         </div>
-        <div>
-          <p>Contact</p>
-          <p>Address</p>
-          <p>phone number</p>
-          <p>email</p>
+        <div className="footer-secondary-container">
+          <h3 className="header-style">Contact</h3>
+          <text className="text-style">Address</text>
+          <text className="text-style">phone number</text>
+          <text className="text-style">email</text>
         </div>
-        <div>
-          <p>Social Media Links</p>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
-          <p>Pinterest</p>
+        <div className="footer-secondary-container">
+          <h3 className="header-style">Social Media Links</h3>
+          <text className="text-style">Instagram</text>
+          <text className="text-style">LinkedIn</text>
+          <text className="text-style">Pinterest</text>
         </div>
       </div>
     </>

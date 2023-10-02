@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <ul>
-      <li>
+    <ul className="ul-container">
+      <li className="nav-item">
         <Link className="link" to="/">
           HOME
         </Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link className="link" to="/about">
           ABOUT
         </Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link className="link" to="/menu">
           MENU
         </Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link className="link" to="/reservations">
           RESERVATIONS
         </Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link className="link" to="/oder">
           ORDER ONLINE
         </Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link className="link" to="/login">
           LOGIN
         </Link>

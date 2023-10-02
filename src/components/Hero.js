@@ -1,14 +1,15 @@
 import restauranfood from "../Assets/restauranfood.jpg";
 import { Link } from "react-router-dom";
+import "./Hero.css";
 
 function Hero() {
   return (
     <>
-      <div>
-        <div>
+      <div className="main">
+        <div className="main-content">
           <h1>Little Lemon</h1>
-          <h2>Chicago</h2>
-          <p>
+          <h4>Chicago</h4>
+          <p className="text-style">
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
@@ -21,7 +22,7 @@ function Hero() {
         </div>
 
         <div>
-          <img src={restauranfood} alt="restaurantFood" />
+          <img className="img" src={restauranfood} alt="restaurantFood" />
         </div>
       </div>
     </>
