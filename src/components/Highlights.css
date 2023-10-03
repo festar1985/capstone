@@ -1,0 +1,46 @@
+.highlights-container{
+    margin-top: 5vh;
+}
+
+
+.highlights-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+.highlights-header h3{
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+.highlights-header button{
+  background-color: #f4ce14;
+  color: #000;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  width: 12em;
+  height: 3em;
+  margin: 1em;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}   
+
+  .highlights-cards{
+    display: flex;
+    width: 100%;
+    
+  }
+
+  .highlights-cards-col{
+    flex: 1;
+    padding: 16px;
+  }
+
+  .img {
+    border-radius: 12px;
+    height: 150px;
+    padding-left: 20%;
+  }

@@ -15,13 +15,13 @@ function Hero() {
           </p>
 
           <Link to="/reservations">
-            <button id="button" to="/reservations">
+            <button className="button" id="button" to="/reservations">
               Reserve a Table
             </button>
           </Link>
         </div>
 
-        <div>
+        <div className="grid-div">
           <img className="img" src={restauranfood} alt="restaurantFood" />
         </div>
       </div>
