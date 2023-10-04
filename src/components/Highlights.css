@@ -6,12 +6,15 @@
 .highlights-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 3%;
     
   }
 
 .highlights-header h3{
     padding-left: 30%;
-    padding-top: 5%;
+    padding-top: 2%;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
 }
 
 .highlights-header button{
@@ -22,7 +25,7 @@
   font-size: 14px;
   width: 12em;
   height: 3em;
-  margin: 1em;
+  margin: 2em;
   border-radius: 2em;
   border: none;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
@@ -31,16 +34,18 @@
   .highlights-cards{
     display: flex;
     width: 100%;
+    padding-top: 3%;
     
   }
 
   .highlights-cards-col{
     flex: 1;
-    padding: 16px;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
-  .img {
+  .img-highlights {
     border-radius: 12px;
     height: 150px;
-    padding-left: 20%;
+    margin-left: 15%;
   }

@@ -16,7 +16,7 @@ function Highlights() {
 
       <div className="highlights-cards">
         <div className="highlights-cards-col">
-          <img className="img" src={greek} alt="Greek Salad" />
+          <img className="img-highlights" src={greek} alt="Greek Salad" />
           <p>Greek Salad</p>
           <p>
             The famous greek salad of crispy lettuce, peppers, olives and our
@@ -26,7 +26,7 @@ function Highlights() {
           <button>Order Delivery </button>
         </div>
         <div className="highlights-cards-col">
-          <img className="img" src={bruschetta} alt="bruschetta" />
+          <img className="img-highlights" src={bruschetta} alt="bruschetta" />
           <p>Bruschetta</p>
           <p>
             Our Bruschetta is made from homemade grilled bread that has been
@@ -36,7 +36,7 @@ function Highlights() {
           <button>Order Delivery </button>
         </div>
         <div className="highlights-cards-col">
-          <img className="img" src={lemon} alt="Lemon cake" />
+          <img className="img-highlights" src={lemon} alt="Lemon cake" />
           <p>Lemon Cake</p>
           <p>
             This comes straight from grandma’s recipe book, every last

@@ -1,0 +1,6 @@
+.form-container{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); 
+    max-width: 200px; 
+    gap: 20px
+}
