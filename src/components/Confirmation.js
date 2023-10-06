@@ -1,5 +1,6 @@
 import Image from "../Assets/Mario.jpg";
 import { Link } from "react-router-dom";
+import "./Confirmation.css";
 
 function Confirmation() {
   return (

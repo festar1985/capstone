@@ -8,6 +8,9 @@ function BookingForm() {
   const [bookingTime, setBookingTime] = useState("17:00");
   const [bookingGuests, setbookingGuests] = useState(1);
   const [bookingOccasion, setbookingOccasion] = useState("");
+  const [bookingFirstName, setbookingFirstName] = useState("");
+  const [bookingLastName, setbookingLastName] = useState("");
+  const [bookingTelephone, setbookingTelephone] = useState("");
 
   const handlerDateChange = (e) => {
     setBookingData(e.target.value);
@@ -25,18 +28,41 @@ function BookingForm() {
     setbookingOccasion(e.target.value);
   };
 
+  const handlerFirstNameChange = (e) => {
+    setbookingFirstName(e.target.value);
+  };
+
+  const handlerLastNameChange = (e) => {
+    setbookingLastName(e.target.value);
+  };
+
+  const handlerTelephoneChange = (e) => {
+    setbookingTelephone(e.target.value);
+  };
+
   return (
     <>
       <form className="form-container">
-        <label htmlFor="res-date">Choose date</label>
+        <h2 className="form-element">Reservation</h2>
+        <label className="form-element" htmlFor="res-date">
+          Choose date
+        </label>
         <input
+          className="form-element"
           type="date"
           id="res-date"
           value={bookingData}
           onChange={handlerDateChange}
         />
-        <label htmlFor="res-time">Choose time</label>
-        <select id="res-time" value={bookingTime} onChange={handlerTimeChange}>
+        <label className="form-element" htmlFor="res-time">
+          Choose time
+        </label>
+        <select
+          className="form-element"
+          id="res-time"
+          value={bookingTime}
+          onChange={handlerTimeChange}
+        >
           <option>17:00</option>
           <option>18:00</option>
           <option>19:00</option>
@@ -44,8 +70,11 @@ function BookingForm() {
           <option>21:00</option>
           <option>22:00</option>
         </select>
-        <label htmlFor="guests">Number of guests</label>
+        <label className="form-element" htmlFor="guests">
+          Number of guests
+        </label>
         <input
+          className="form-element"
           type="number"
           placeholder="1"
           min="1"
@@ -54,8 +83,11 @@ function BookingForm() {
           value={bookingGuests}
           onChange={handlerGuestChange}
         />
-        <label htmlFor="occasion">Occasion</label>
+        <label className="form-element" htmlFor="occasion">
+          Occasion
+        </label>
         <select
+          className="form-element"
           id="occasion"
           value={bookingOccasion}
           onChange={handlerOccasionChange}
@@ -63,7 +95,46 @@ function BookingForm() {
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" />
+        <label className="form-element" htmlFor="firstname">
+          FirstName
+        </label>
+        <input
+          className="form-element"
+          type="text"
+          id="firstname"
+          value={bookingFirstName}
+          onChange={handlerFirstNameChange}
+          required
+        />
+        <label className="form-element" htmlFor="lastname">
+          LastName
+        </label>
+        <input
+          className="form-element"
+          type="text"
+          id="lastname"
+          value={bookingLastName}
+          onChange={handlerLastNameChange}
+          required
+        />
+        <label className="form-element" htmlFor="lastname">
+          Telephone
+        </label>
+        <input
+          className="form-element"
+          type="number"
+          id="guests"
+          value={bookingTelephone}
+          onChange={handlerTelephoneChange}
+          required
+        />
+
+        <input
+          className="form-element form-button-input"
+          type="submit"
+          value="Make Your reservation"
+          disabled={!bookingFirstName && !bookingLastName && !bookingTelephone}
+        />
       </form>
     </>
   );

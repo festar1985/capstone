@@ -1,6 +1,32 @@
 .form-container{
     display: grid;
-    grid-template-rows: repeat(5, 1fr); 
-    max-width: 200px; 
-    gap: 20px
+    grid-template-rows: repeat(16, 1fr); 
+    height: 300px; 
+    justify-content: center;
+    align-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    gap: 15px
+}
+
+.form-element{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+}
+
+input{
+    border: 2px solid #495e57;
+    border-radius: 4px;
+}
+
+select{
+    border: 2px solid #495e57;
+    border-radius: 4px;
+}
+
+.form-button-input{
+    background-color: #495e57;
+    color:#f4ce14;
 }

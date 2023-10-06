@@ -4,6 +4,7 @@
 
 .reserve-header-text {
   font-size: 15px;
+  text-align: center
 }
 
 .confirmation-image {
@@ -14,26 +15,27 @@
 
 .redirect-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12vw;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12vh;
+
 }
 
 .redirect-button {
   background-color: #464646;
-  color: white !important;
+  color: white;
   padding: 2vh 2rem 2vh 2rem;
   border-radius: 0.5rem;
-  min-width: 12vw;
+  min-width: 8vw;
+  max-width: 10vw;
   font-family: "Karla";
-  font-size: 18px;
+  font-size: 16px;
+  text-align: center;
+  justify-self: center;
+  text-decoration: none
 }
 
 .redirect-button:hover {
   background-color: #f4ce14;
-  color: #464646 !important;
+  color: #464646;
   transition: 0.2s;
 }
