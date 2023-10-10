@@ -1,23 +1,24 @@
 import "./BookingForm.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function BookingForm() {
-  const [bookingData, setBookingData] = useState(
-    new Date().toISOString().slice(0, 10)
-  );
-  const [bookingTime, setBookingTime] = useState("17:00");
+function BookingForm(props) {
+  const [bookingTime, setbookingTime] = useState("17:00");
   const [bookingGuests, setbookingGuests] = useState(1);
   const [bookingOccasion, setbookingOccasion] = useState("");
   const [bookingFirstName, setbookingFirstName] = useState("");
   const [bookingLastName, setbookingLastName] = useState("");
   const [bookingTelephone, setbookingTelephone] = useState("");
 
+  const navigate = useNavigate();
+
   const handlerDateChange = (e) => {
-    setBookingData(e.target.value);
+    props.setBookingDate(new Date(e.target.value).toISOString().slice(0, 10));
+    props.setAvailableTimes("update");
   };
 
   const handlerTimeChange = (e) => {
-    setBookingTime(e.target.value);
+    setbookingTime(e.target.value);
   };
 
   const handlerGuestChange = (e) => {
@@ -40,6 +41,12 @@ function BookingForm() {
     setbookingTelephone(e.target.value);
   };
 
+  function handlingTheForm(e) {
+    e.preventDefault();
+    console.log("submiting");
+    navigate("/confirmation");
+  }
+
   return (
     <>
       <form className="form-container">
@@ -51,7 +58,7 @@ function BookingForm() {
           className="form-element"
           type="date"
           id="res-date"
-          value={bookingData}
+          value={props.bookingDate}
           onChange={handlerDateChange}
         />
         <label className="form-element" htmlFor="res-time">
@@ -63,12 +70,9 @@ function BookingForm() {
           value={bookingTime}
           onChange={handlerTimeChange}
         >
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+          {props.availableTimes.map((e) => (
+            <option>{e}</option>
+          ))}
         </select>
         <label className="form-element" htmlFor="guests">
           Number of guests
@@ -133,7 +137,8 @@ function BookingForm() {
           className="form-element form-button-input"
           type="submit"
           value="Make Your reservation"
-          disabled={!bookingFirstName && !bookingLastName && !bookingTelephone}
+          disabled={!bookingFirstName || !bookingLastName || !bookingTelephone}
+          onClick={handlingTheForm}
         />
       </form>
     </>
