@@ -2,7 +2,7 @@
   padding-left: 0;
 }
 
-.nav-item {
+.nav-item-veritcal {
   list-style: none;
   padding-left: 0%;
   padding-bottom: 1%;
@@ -12,7 +12,6 @@
   align-content: left;
   justify-content: left;
 }
-
 
 .link {
   text-decoration: none;

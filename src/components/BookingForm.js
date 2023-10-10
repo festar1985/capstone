@@ -71,7 +71,7 @@ function BookingForm(props) {
           onChange={handlerTimeChange}
         >
           {props.availableTimes.map((e) => (
-            <option>{e}</option>
+            <option key={e}>{e}</option>
           ))}
         </select>
         <label className="form-element" htmlFor="guests">
@@ -136,6 +136,8 @@ function BookingForm(props) {
         <input
           className="form-element form-button-input"
           type="submit"
+          id="submit"
+          data-testid="submit"
           value="Make Your reservation"
           disabled={!bookingFirstName || !bookingLastName || !bookingTelephone}
           onClick={handlingTheForm}
