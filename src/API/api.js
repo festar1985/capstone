@@ -9,10 +9,12 @@ export const seededRandom = function (seed) {
 
 export const fetchAPI = function (date) {
   let result = [];
-  let random = seededRandom(date.getDate());
+  let newDate = new Date(date);
+
+  let random = seededRandom(newDate.getDate());
 
   for (let i = 17; i <= 23; i++) {
-    if (random() < 0.5) {
+    if (random() < 0.3) {
       result.push(i + ":00");
     }
     if (random() < 0.5) {

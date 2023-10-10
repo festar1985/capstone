@@ -15,15 +15,15 @@ function Footer() {
         </div>
         <div className="footer-secondary-container">
           <h3 className="header-style">Contact</h3>
-          <text className="text-style-footer">Address</text>
-          <text className="text-style-footer">phone number</text>
-          <text className="text-style-footer">email</text>
+          <address className="text-style-footer">Address</address>
+          <address className="text-style-footer">phone number</address>
+          <address className="text-style-footer">email</address>
         </div>
         <div className="footer-secondary-container">
           <h3 className="header-style">Social Media Links</h3>
-          <text className="text-style-footer">Instagram</text>
-          <text className="text-style-footer">LinkedIn</text>
-          <text className="text-style-footer">Pinterest</text>
+          <address className="text-style-footer">Instagram</address>
+          <address className="text-style-footer">LinkedIn</address>
+          <address className="text-style-footer">Pinterest</address>
         </div>
       </div>
     </>
