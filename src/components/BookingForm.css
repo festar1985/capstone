@@ -25,12 +25,31 @@ select {
   border-radius: 4px;
 }
 
-.form-button-input {
-  background-color: #f4ce14;
-  color: #495e57;
+
+
+.form-button-input{
+    background-color: #495e57;
+    color:#f4ce14;
 }
+
+
+@media (max-width:801px){
+ 
+    .form-container{
+        display: grid;
+        grid-template-rows: repeat(16, 1fr); 
+        height: 300px; 
+        justify-content: center;
+        align-content: center;
+        padding-top: 35%;
+        padding-bottom: 35%;
+        gap: 15px
+    }
+
+  }
 
 .form-button-input[disabled] {
   background-color: grey;
   color: black;
 }
+
