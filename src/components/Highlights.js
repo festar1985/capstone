@@ -23,7 +23,7 @@ function Highlights() {
             Chicago style feta cheese, garnished with crunchy garlic and
             rosemary croutons.
           </p>
-          <button>Order Delivery </button>
+          <button className="highlights-button">Order Delivery </button>
         </div>
         <div className="highlights-cards-col">
           <img className="img-highlights" src={bruschetta} alt="bruschetta" />
@@ -33,7 +33,7 @@ function Highlights() {
             smeared with garlic and seasoned with salt and olive oil. Topped
             with fresh vegetables.
           </p>
-          <button>Order Delivery </button>
+          <button className="highlights-button">Order Delivery </button>
         </div>
         <div className="highlights-cards-col">
           <img className="img-highlights" src={lemon} alt="Lemon cake" />
@@ -42,7 +42,7 @@ function Highlights() {
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
-          <button>Order Delivery </button>
+          <button className="highlights-button">Order Delivery </button>
         </div>
       </div>
     </>

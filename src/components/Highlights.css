@@ -38,6 +38,13 @@
     
   }
 
+  .highlights-button{
+    background-color: #f4ce14;
+    color: #000;
+    border-radius: 2em;
+    
+  }
+
   .highlights-cards-col{
     flex: 1;
     padding-left: 8%;
@@ -48,4 +55,23 @@
     border-radius: 12px;
     height: 150px;
     margin-left: 15%;
+  }
+
+  @media (max-width:801px){
+    .highlights-cards{
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      width: 50%;
+      padding-top: 3%;
+      padding-left: 25%;
+      
+    }
+
+    .img-highlights {
+      border-radius: 12px;
+      height: 150px;
+      margin-left: 15%;
+      padding-top:5%
+    }
+
   }

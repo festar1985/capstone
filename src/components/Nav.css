@@ -8,6 +8,8 @@
   padding-right: 5%;
 }
 
+
+
 .nav-item {
   list-style: none;
   padding-left: 3%;
@@ -35,4 +37,40 @@
 
 .link:visited {
   color: #000;
+}
+
+@media (max-width:801px){
+  .nav-container-main {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-item-reservation {
+    grid-column: 1/3;
+    grid-row:2/3;
+    margin-left: 10%;
+  }
+  .nav-item-order {
+    grid-column: 3/5;
+    grid-row:2/3;
+    margin-left: 5%;
+  }
+
+  .nav-item {
+    list-style: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 10px;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  
 }
